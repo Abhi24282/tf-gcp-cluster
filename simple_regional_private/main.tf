@@ -33,7 +33,7 @@ data "google_compute_subnetwork" "subnetwork" {
 }
 
 module "gke" {
-  source                    = "../modules/private-cluster/"
+  source                    = "https://github.com/vkolluri8/tf-cluster/tree/main/private-cluster"
   project_id                = var.project_id
   name                      = var.name
   regional                  = true
